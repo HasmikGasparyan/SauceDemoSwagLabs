@@ -34,6 +34,7 @@ public class LoginPage {
     }
    }
 
-   /*vercnum enq webelemente, veragrum enq stringi, vorovhetev menq stringov enq ogtagorcelu,
-    bayc qani vor ed stringe nerarum a bolor loginnere, split enq anum lcnum enq stringeri massivi mej,
-    entexic el arajin indexov stringn uxarkum enq ej*/
+  /*
+We take the webelement, assign it to a string because we need to use string type for our login, but as our string
+includes all the logins, we split it and place it into Strings array, and then send the string with index[1]
+ to the page. */
