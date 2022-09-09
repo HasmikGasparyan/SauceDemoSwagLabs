@@ -18,7 +18,7 @@ public class LoginPage {
     public void getCredentialsAndLogin() throws InterruptedException{
         basePage = new BasePage(driver);
 
-        List<WebElement> givenLoginsElem = driver.findElements(By.cssSelector("[id='login_credentials']"));
+        List<WebElement> givenLoginsElem = basePage.getElements("css","[id='login_credentials']");
         String savedLoginsStr = givenLoginsElem.get(0).getText();
         String[] loginsStrArray = savedLoginsStr.split("\n");
 
